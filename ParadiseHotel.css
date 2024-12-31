@@ -1,0 +1,96 @@
+*{
+          padding: 0;
+          margin: 0;
+          
+}
+
+.Hero-Section{
+          background-image: url(pexels-pixabay-271624.jpg);
+          background-size: cover;
+          /*
+          background-blend-mode: overlay;
+          background-color: rgba(0, 0, 0, 0.5);
+          */
+          height: 100vh;
+          position: relative;
+          text-align: center;
+
+}
+.Hero-Text{
+    color: rgb(109, 5, 26);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          h1{
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                    font-family:monospace ;
+          }
+          p{
+                    font-size: 20px;
+                    margin-top: 10px;
+                    font-family: monospace;
+          }
+          
+
+}
+
+.First, .Second{
+          
+          background-color:rgb(153, 91, 105) ;
+          color: rgb(68, 2, 18),91,105;
+          font-size: 18px;
+          border: none;
+          border-radius: 20px;
+          padding: 10px 20px;
+          margin-top: 10px;
+          cursor: pointer; 
+          
+}
+.About-Text{
+          float: left;
+          width: 50%;
+          margin: 10px;
+          text-align: center;
+}
+.about-Section >h1{
+          color: solid black;
+          text-align: center;
+          margin: 10px 0px;
+          text-decoration: underline;
+}
+
+          
+.amenities{
+          text-align: center;
+          background-color: antiquewhite;
+          
+}
+.amenities ul{
+          display: inline-block;
+          text-align: left;
+          margin-top: 10px;
+          list-style: none;       
+}
+.fa-solid{
+    margin-right: 10px;
+
+ }
+ .Room-Type-Container{
+    display: flex;
+    justify-content: flex-start; /* Adjust alignment */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 20px;
+}
+.Room-Images {
+    
+   
+}
+.Room-list {
+    margin-left: 20px; /* Add some space between the image and the list */
+}
+
+.Room-list h3 {
+    margin: 10px 0; /* Add some margin to the list items */
+}
