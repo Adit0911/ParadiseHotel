@@ -1,0 +1,220 @@
+*{
+          padding: 0;
+          margin: 0;
+          
+}
+
+.Hero-Section{
+          background-image: url(pexels-pixabay-271624.jpg);
+          background-size: cover;
+          /*
+          background-blend-mode: overlay;
+          background-color: rgba(0, 0, 0, 0.5);
+          */
+          min-height: 100vh;
+          max-width: 100vw;      /* isse screen puri cover ho jayegi kisi bhi browser ke liye */
+          position: relative;
+          text-align: center;
+
+}
+.Hero-Text{
+    color: rgb(109, 5, 26);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: fit-content;
+          h1{
+                    font-size: 40px;      /* 4rem = 40px */
+                    /* margin-bottom: 10px ;   /* 1rem = 10px */
+                   /* font-family:monospace ; */
+          }
+          p{
+                    font-size: 18px;    /* 2rem = 20px */
+                    /* margin-top: 10px 0px;    /* 1rem = 10px */
+                    /*font-family: monospace; */
+          }
+          
+
+}
+
+.First,.Second {
+          
+          background-color:rgb(153, 91, 105) ;
+          color: rgb(68, 2, 18),91,105;
+          font-size: 17px;
+          border: none;
+          border-radius: 10px;
+          padding: 8px 20px;
+          margin: 10px 0px;
+          cursor: pointer; 
+         
+         }
+          
+
+
+
+.About-heading ,
+.Second-Container , 
+.TypesOfRoom ,
+.filForm
+{
+    text-align: center;
+    
+
+}
+.about-Section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.About-Text{
+    
+          float: left;
+          width: 50%;
+          margin: 10px;
+    
+}
+ul,li{
+    
+    list-style: none;
+    
+}
+.fa-solid{
+    margin-right: 10px;
+
+}
+
+.Room-Type-Container{
+    display: flex;
+    justify-content: space-around; /* Adjust alignment */
+    align-items: center; /* Align items to the top */
+    flex-direction: row-reverse;
+   /* margin-top: 20px; /* Add some margin to the top */
+  /*  padding: 0px 20px;*/ /* Add some padding to the sides */
+}
+.Room-list{
+    font-size: 20px; /* Set the font size of the list */
+   
+}
+.Room-Images img{
+    width: 600px; /* Set the width of the images */
+    height: 400px; /* Set the height of the images */
+    
+   
+}
+.Room-list {
+    margin-left: 20px; /* Add some space between the image and the list */
+}
+
+.Room-list h4 {
+    margin: 10px 0px; /* Add some margin to the list items */
+}
+.HelpPurpose{
+    background-color:rgb(153, 91, 105) ;
+          color: rgb(68, 2, 18),91,105;
+          font-size:  17px;
+          border: none;
+          position: fixed;
+          border-radius: 10px;
+          padding: 9px 20px;
+          margin: 10px 0px;
+          cursor: pointer;
+          right: 0px;
+          bottom: 20px;
+        
+         
+}
+
+form{
+    border: 2px solid rgb(88, 86, 87);
+    width: max-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 25px 0px;
+
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filForm{
+    margin-top: 9px;
+    text-decoration: underline;
+}
+label
+{
+    font-size: 1.8rem;
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+input,
+textarea,
+select{
+    padding: 5px;
+    font-size: 15px;
+    position: relative;
+    width: 70%;
+    box-sizing: border-box 3px solid;
+   
+}
+
+.formGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Add some space between form groups */
+    
+}
+
+
+
+
+@media only screen and (max-width:500px){      /* 500px se chota screen ho to ye css apply hoga */
+    .Hero-Text>h1,
+    .About-heading{
+        font-size: 1.5rem;
+        
+    }
+    p{
+    font-size: 0.9rem;  }
+    .Hero-Text{
+        width: fit-content;
+    }
+       
+.First{
+    font-size: 10px;
+    
+      }
+/*about flex likh kr maine paragraph aur amenties lo bat diya tha to yaha pr block laga kr full width de diya taki mobile scrren me ye paragraph full ho jaye aur amenties iske niche aa jaye taki kharab na dikhe*/
+      .about-Section{
+        display: block;
+        padding: 0rem 0.5rem;
+        
+        }
+        .About-Text{
+            width: 100%;
+        }
+        .amenities>h3{
+               text-align: center;
+        }
+        .filForm,
+        .formContainer{
+            text-align: center;
+            width: 80%;
+        }
+        form{margin: 0px;
+        align-items: center;}
+        label{
+            font-size: inherit;
+        }
+}
+@media only screen and (max-width:501px) and (max-width:900px) {   /* 501px se bada screen ho to ye css apply hoga */
+    .hero-text>h1{
+           font-size: 30px;
+    }
+}
